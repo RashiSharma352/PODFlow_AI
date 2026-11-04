@@ -74,7 +74,7 @@ st.markdown('<div class="hero"><h1>Proof of Delivery</h1><p>Capture the document
 
 if page == "Capture POD":
     st.subheader("📸 Delivery receipt capture")
-    st.info("Driver: trip select karein, POD ki clear photo upload karein — stamp, signature aur LR number dikhna chahiye.")
+    st.info("Driver: trip select karein, POD ki clear photo upload karein.— stamp, signature aur LR number dikhna chahiye.")
     choices = {f"{t['trip_id']} · {t['destination']} · {t['client']}": t for t in trips}
     label = st.selectbox("Select your trip", list(choices))
     trip = choices[label]
